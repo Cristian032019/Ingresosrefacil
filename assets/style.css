@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap');
+
+:root {
+  --primaryColor:#12639a;
+  --secondaryColor: #dc911f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  font-display: swap;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1 {
+  /* font-weight: 550; */
+}
+.mt-6 {
+  margin-top: 5rem!important;
+}
+
+.mt-7 {
+  margin-top: 7rem!important;
+}
+.mt-8 {
+  margin-top: 10rem!important;
+}
+.mt-9 {
+  margin-top: 14rem!important;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.text-bg {
+  font-size: 20px;
+}
+.text-sm {
+  font-size: 13px;
+}
+.bold {
+  font-weight: bold;
+}
+
+.logo {
+  width: 150px;
+}
+
+.btn-general {
+  border-radius: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-md  {
+  width: 200px;
+}
+.btn-links {
+  display: table-cell;
+}
+
+.bg-primary {
+  background: var(--primaryColor)!important;
+}
+button.bg-primary:hover, a.bg-primary:hover {
+  background-color: var(--primaryColor)!important;
+}
+.bg-secondary {
+  background: var(--secondaryColor)!important;
+}
+button.bg-secondary:hover, a.bg-secondary:hover{
+  background-color: var(--secondaryColor)!important;
+}
+a.bg-secondary:focus, .bg-secondary:focus {
+  background-color: #fff!important;
+  color: #000;
+}
+
+.bg-white {
+  background: #fff ;
+  color: #000;
+}
+.bg-gray {
+  background: #ddd;
+}
+.bg-gray-dark {
+  background: #7c7c7c;
+}
+.bg-black {
+  background: #000;
+  color: #fff
+}
+.color-primary {
+  color: var(--primaryColor)!important;
+}
+.color-secondary {
+  color: var(--secondaryColor)!important;
+}
+.color-white {
+  color: #fff;
+}
+.color-black {
+  color: #000!important;
+}
+.icon-sm {
+  height: 55px;
+}
+.icon-social {
+  width: 35px;
+  vertical-align: bottom;
+}
+
+/* MULTIPRODUCTO */
+
+.card-radius {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 1000px;
+  padding: 20px 30px;
+  max-width: 300px;
+  margin: 0 auto;
+  min-height: 500px;
+  transition: transform .2s;
+}
+.card-radius img {
+  max-width: 100%;
+}
+.card-radius:hover {
+  background:var(--primaryColor);
+  transform: scale(1.1); 
+  color: #fff;
+}
+
+.slides-items {
+  bottom: -40px!important;
+  
+}
+.slides-items li {
+  background: var(--primaryColor);
+  border-radius: 20px;
+  height: 0px;
+  width: 20px;
+  opacity: 1;
+}
+.slides-items li.active {
+  background: var(--secondaryColor);
+}
+.btn-slide-products-left {
+  top: 250px;
+  left: -30px;
+  z-index: 10;
+}
+
+.btn-slide-products-right {
+  top: 250px;
+  right: -30px;
+  z-index: 10;
+}
+
+.btn-slide-multipSm-left {
+  top: 250px;
+  left: 50px;
+  z-index: 10;
+}
+.btn-slide-multipSm-right {
+  top: 250px;
+  right: 50px;
+  z-index: 10;
+}
+
+/* HEADER */
+
+.header {
+  /* background: var(--primaryColor); */
+  padding: 10px 0;
+  color: #fff;
+}
+/* .dropdown-toggle {
+  color: #00;
+} */
+.dropdown-toggle:hover {
+  color: var(--secondaryColor);
+}
+.dropdown-toggle:focus {
+  outline: 0;
+  box-shadow: none;
+}
+/* a.nav-link {
+  color: var(--primaryColor);
+} */
+a.nav-link:hover {
+  color: var(--secondaryColor)!important;
+}
+.dropdown-menu {
+  box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.05), 0 40px 60px 70px rgb(0 0 0 / 5%);
+    background: #fff !important;
+    border: none;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.dropdown-menu a:hover {
+  color: var(--secondaryColor);
+}
+.dropdown-menu a:focus {
+  background: transparent;
+}
+.dropdown-toggle {
+  white-space: inherit;
+}
+
+.navbar-light .navbar-toggler {
+  color: #fff;
+  border: none;
+}
+
+/* INFORMATION */
+.btn-slide-info-right {
+  top: 145px;
+  right: 20px;
+  z-index: 100;
+
+}
+.btn-slide-info-left {
+  top: 145px;
+  left: 20px;
+  z-index: 10;
+}
+
+/* ALIADOS */
+.btn-slide-allied-left {
+  bottom: 25px;
+  left: -50px;
+}
+.btn-slide-allied-right {
+  bottom: 25px;
+  right: -50px;
+}
+
+/* TRABAJA CON NOSOTROS */
+.box-services {
+  border-radius: 0 200px 200px 0;
+  min-height: calc(100% - 90px);
+}
+.box-services img, .box-dealers img {
+  top: 0;
+  right: 0;
+}
+.box-dealers {
+  min-height: calc(100% - 90px);
+  padding-right: 100px;
+}
+.box-commerces {
+  border-radius: 200px  0  0 200px;
+  min-height: calc(100% - 90px);
+  padding-left: 160px;
+}
+.box-commerces img {
+  top: 0;
+  left: 30px;
+}
+
+
+/* POR QUE ELEGIRNOS */
+.row-feature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.col-feature {
+  box-sizing: content-box;
+  margin: 20px;
+}
+.box-features {
+  border-radius: 200px;
+  width: 180px;
+  height: 180px;
+  padding-top: 50px;
+}
+
+.btn-slide-features-left {
+  top: 100px;
+  left: 20px;
+  z-index: 10;
+}
+.btn-slide-features-right {
+  top: 100px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* TESTIMONIO */
+.btn-slide-testimony-right {
+  top: 80px;
+  right: 20px;
+  z-index: 1010;
+}
+.btn-slide-testimony-left {
+  top: 80px;
+  left: 20px;
+  z-index: 110;
+}
+
+/* CONTACTO */
+.box-contact {
+  width: 80%;
+  margin: 0 auto;
+}
+.list-group-item {
+  background-color: #dddd;
+  margin: 10px 0;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer!important;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.list-group-item.active {
+  background-color: var(--secondaryColor)!important;
+  border-color: var(--secondaryColor)!important;
+}
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+
+#multiproduct {
+  transition: 1s;
+}
+@media (min-width: 1200px){
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1000px){
+  .header {
+    text-align: center;
+  }
+  .btn-links {
+    display: block;
+    margin: 0 auto;
+  }
+} 
+
+@media (max-width: 768px){
+  .btn-slide-features-left {
+    top: 200px;
+    left: 20px;
+    z-index: 10;
+  }
+  .btn-slide-features-right {
+    top: 200px;
+    right: 20px;
+    z-index: 10;
+  }
+}
+
+
+@media (max-width: 400px){
+  .box-features {
+    border-radius: 200px;
+    width: 140px;
+    height: 140px;
+    padding-top: 30px;
+  }
+  .icon-sm {
+    height: 40px;
+  }
+  .text-sm {
+    font-size: 10px;
+  }
+  
+}
